@@ -232,7 +232,7 @@
                   <div id="head-mobile"></div>
                   <div class="button"></div>
                   <ul class="herder-right-menu">
-                     <li><a class="b-n" href="#">Welcome Username!</a> </li>
+                     <li><a class="b-n" href="#">Welcome Username!as</a> </li>
                      <li><a href="#"><img src="images/users-new.png"></a> </li>
                      <li><a href="#"><img src="images/settings-new.png"></a> </li>
                      <li><a href="#"><img src="images/logout-new.png"></a></li>
