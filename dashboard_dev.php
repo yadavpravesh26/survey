@@ -34,6 +34,14 @@
 			   WHERE ES.com_id = $com_id $cond GROUP BY MONTH(ES.add_date) ORDER BY ES.add_date ASC";
 			   $TotalSurveySent  = $prop->getAll_Disp($sql);
 			   $graph_title  = $start_date." Report";
+		
+		
+		/*$date = new DateTime($start_date);
+		$date->modify('first day of this month');
+		$start_date = $date->format('Y-m-d');
+		$date->modify('last day of this month');
+		$end_date = $date->format('Y-m-d');
+		$TotalSurveySent  = $surObj->getTotalSentSurvey($com_id, $start_date, $end_date);*/
 	}
 	else if($start_date == 'YTD')
 	{
@@ -683,7 +691,7 @@
          		chartFilterMonth(response);
          	}});
          }
-		 	//console.log(<?php echo $xAxis;?>+'Pravesh');
+		 	console.log(<?php echo $xAxis;?>+'Pravesh');
          	Highcharts.chart('container', {
              chart: {
                type: 'column'
